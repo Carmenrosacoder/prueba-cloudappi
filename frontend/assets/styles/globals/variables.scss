@@ -1,0 +1,32 @@
+//Color
+$color_base : #5B5B5F;
+$color_lines : #bbb7b7;
+$color_boxes : #efeaea;
+$color_light : #ABABAB;
+$color_blue : #159DFF;
+$color_bonus : #16569C;
+$color_gray : #979797;
+$color_green : #49CAC0;
+$color_red : #e64442;
+$color_white : #FFF;
+$color_yellow :#FF9100 ;
+//$color_interbank : #00a94f;
+$color_bbva : var(--data-color-primary);
+$color_bbva_secondary : var(--data-color-secondary);
+$color_interbank : var(--data-color-primary-2);
+$color_interbank_secondary : var(--data-color-secondary-2);
+$color_crediscotia : var(--data-color-primary-3);
+$color_crediscotia_secondary : var(--data-color-secondary-3);
+:root{
+    --data-color-primary: #25579B; // Use #{$primary} if you use SASS v3.5.6+
+    --data-color-primary-2: #00a94f;
+    --data-color-primary-3: #c22727;
+    --data-color-secondary: #21A1D1;
+    --data-color-secondary-2: #00a94f;
+    --data-color-secondary-3: #c22727;
+}
+//Font
+$font_100 : 'Conv_MuseoSans_100',Times, serif;
+$font_300 : 'Conv_MuseoSans_300',Times, serif;
+$font_500 : 'Conv_MuseoSans_500',Times, serif;
+$font_700 : 'Conv_MuseoSans_700',Times, serif;

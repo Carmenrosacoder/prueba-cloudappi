@@ -1,0 +1,12 @@
+//Normalize
+@import "~normalize-scss/sass/normalize/_import-now.scss";
+
+//Globals
+@import "globals/variables";
+@import "globals/typography";
+@import "globals/global";
+@import "globals/utils";
+
+
+//Pages
+@import "pages/home";

@@ -1,0 +1,304 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.15);
+  z-index: 1;
+
+  &.no-styck {
+    position: relative;
+  }
+
+  .container {
+    max-width: 1330px;
+    padding: 0 15px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    height: 87px;
+    @media (max-width: 767px) {
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+    @media (max-width: 1200px) {
+      flex-direction: column-reverse;
+      height: inherit;
+    }
+  }
+
+  .topnav {
+    @media (max-width: 1200px) {
+      display: block;
+      overflow: hidden;
+      background: #FFFFFF;
+      box-shadow: 0 4px 4px hsla(0, 0%, 70%, .25);
+      margin: 0 -15px;
+      padding: 12px 15px;
+    }
+
+    .menu {
+      display: none;
+      margin-top: 10px;
+      @media (max-width: 1200px) {
+        display: block;
+        text-align: left;
+      }
+      @media (max-width: 350px) {
+        margin-top: 5px;
+      }
+
+      img {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 25px;
+        cursor: pointer;
+        @media (max-width: 1200px) {
+          margin-right: 10px;
+        }
+        @media (max-width: 380px) {
+          margin-right: 3px;
+        }
+
+      }
+
+      #close {
+        display: none;
+      }
+
+      .mobilelogo {
+        display: inline-block;
+        vertical-align: middle;
+
+        img {
+          width: 75px;
+          @media (max-width: 1200px) {
+            display: block;
+            margin-left: 8px;
+            margin-top: 2px;
+          }
+        }
+      }
+    }
+
+  }
+
+  &__purchaseheader {
+    height: 40px;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    background-color: #fff;
+    display: none;
+    @media (max-width: 1200px) {
+      display: block;
+    }
+
+    .logo {
+      position: absolute;
+      width: 100%;
+      text-align: center;
+
+      img {
+        width: 70px;
+        margin-top: 8px;
+      }
+    }
+
+    .slogan {
+      font-size: 11px;
+      display: flex;
+      float: right;
+      color: $color_green;
+      font-family: $font_300;
+      font-weight: normal;
+      margin-top: 0;
+      margin-bottom: 0;
+      justify-content: center;
+
+      p {
+        margin: 8px;
+        line-height: 11px;
+      }
+    }
+  }
+
+  &__logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: inherit;
+    @media (max-width: 1080px) {
+      width: 240px;
+    }
+    @media (max-width: 1200px) {
+      display: none;
+    }
+
+    &--purchase {
+      display: block;
+      @media (max-width: 1200px) {
+        display: none;
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 100px;
+    }
+
+  }
+
+  &__navigation {
+    padding-left: 0;
+    //overflow: hidden;
+    transition: 0.5s ease all;
+    margin: 0px 0;
+    align-items: center;
+    display: flex;
+    @media (max-width: 1080px) {
+      text-align: right;
+    }
+    @media (max-width: 1200px) {
+      text-align: left;
+      float: none;
+      margin: 0 -15px;
+      display: block;
+      width: 110%;
+      height: 0;
+      box-shadow: 0 4px 4px hsla(0, 1%, 70%, .25);
+      overflow: hidden;
+    }
+
+    &.open {
+      height: 260px;
+      @media (max-width: 1200px) {
+        height: auto;
+        overflow: auto;
+      }
+      @media screen and (orientation:landscape) {
+        height: 308px !important;
+        overflow: auto;
+      }
+      + .topnav {
+        .menu {
+          #open {
+            display: none;
+          }
+
+          #close {
+            display: inline-block !important;
+          }
+        }
+      }
+    }
+
+    li {
+      list-style: none;
+      display: inline-block;
+      margin: 0 15px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      button{
+        background-color: transparent;
+        border:none;
+        font-family: "Conv_MuseoSans_500", Times, serif;
+        font-size: 17px;
+        @media (max-width: 1200px) {
+          display: block;
+          font-size: 16px;
+          font-family: $font_300;
+          font-weight: normal;
+          width: 100%;
+          text-align: left;
+          border-bottom: 0;
+          padding: 23px 15px 9px 15px;
+        }
+      }
+      @media (max-width: 1200px) {
+        display: block;
+        margin: 0;
+        z-index: 9999999;
+      }
+      @media (max-width : 1024px) and (orientation:landscape) {
+        height: initial;
+      }
+
+      a {
+        text-decoration: none;
+        color: $color_green;
+        font-family: $font_500;
+        font-size: 17px;
+        &.router-link-active{
+          border-bottom: 3px solid $color_green;
+          @media (max-width: 1024px) {
+            border: none;
+          }
+        }
+        @media (max-width: 1000px) {
+          font-size: 14px;
+        }
+        @media (max-width: 1200px) {
+          display: block;
+          color: $color_base;
+          font-size: 16px;
+          font-family: $font_300;
+          font-weight: normal;
+          padding: 23px 15px;
+          border-bottom: 1px solid #ededed;
+        }
+      }
+
+      &:last-child {
+        a {
+          @media (max-width: 1200px) {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+  }
+
+  &__cta {
+    float: right;
+    margin-left: 35px;
+    margin-top: 20px;
+    margin-bottom: 19px;
+    @media (max-width: 1200px) {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: 14px;
+      display: block;
+    }
+    @media (max-width: 350px) {
+      font-size: 12px;
+      padding: 11px 12px;
+    }
+  }
+
+  .hidden{
+    display: none;
+  }
+}
+
+.hasTimer {
+  .header {
+    top: 40px;
+  }
+
+  .banner .container {
+    margin: 128px auto 0;
+    @media(max-width: 1440px) {
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    @media (max-width: 768px) {
+      margin: 111px auto 0 !important;
+    }
+    @media (max-width: 350px) {
+      margin: 100px auto 0 !important;
+    }
+  }
+}
