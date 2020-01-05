@@ -1,16 +1,9 @@
 <template>
-  <div>
-    <footer class="footer">
-      <div class="container">
-        <div class="top footer_div">
-          <div class="footer_div__left" />
-        </div>
-        <div>
-          <b class="footer_div__left version">2019. Todos los derechos reservados. Versión 1.0.0</b>
-        </div>
-      </div>
-    </footer>
-  </div>
+  <b-container>
+    <b-row class="footer">
+      <b class="footer_div__left version">2020. Carmenrosa Arias - Carias. Versión 1.0.0</b>
+    </b-row>
+  </b-container>
 </template>
 <script>
 export default {

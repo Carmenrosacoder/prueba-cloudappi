@@ -1,7 +1,7 @@
 import pkg from './package'
 
 export default {
-  mode: 'universal',
+  mode: 'spa',
 
   /*
   ** Headers of the page
@@ -34,9 +34,6 @@ export default {
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: [
-    { src: '~/plugins/vue-carousel.js', ssr: false }
-  ],
 
   /*
   ** Nuxt.js modules
@@ -44,14 +41,15 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    'bootstrap-vue/nuxt'
   ],
   /*
   ** Axios module configuration
   */
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
-    baseURL: 'http://localhost:8000/api' || 'https://localhost:8000/api',
+    baseURL: 'https://my-user-manager.herokuapp.com',
     // proxyHeaders: false,
     credentials: false
   },

@@ -1,10 +1,12 @@
 <template>
-  <div id="app" >
-    <header class="header">
-      <div class="container">
-        <h3>header</h3>
-      </div>
-    </header>
+  <div id="app">
+    <b-navbar toggleable="lg" variant="info">
+      <b-container>
+        <b-navbar-brand href="/">
+          <img src="../assets/images/logo.png" alt="Logo">
+        </b-navbar-brand>
+      </b-container>
+    </b-navbar>
   </div>
 </template>
 <script>
