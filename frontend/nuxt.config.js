@@ -13,9 +13,6 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: pkg.description },
       { name: 'keywords', content: 'cloudappi' }
-    ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
 
@@ -76,6 +73,6 @@ export default {
     }
   },
   server: {
-    port: 8080
+    port: 2000
   }
 }

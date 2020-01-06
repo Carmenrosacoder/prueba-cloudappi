@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f90c6c1c-796d-4ca9-8fd4-905d4973f89f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/components/Footer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/components/Footer.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/nuxt.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/nuxt.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/pages/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/static/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/static/icon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/static/images/IcoFacebook.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/static/images/IcoLinkedin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/static/images/IcoTwitter.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +37,12 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/pages/usuario" />
+      <recent name="$PROJECT_DIR$/frontend/pages" />
+    </key>
+  </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
       <list>
@@ -58,7 +66,8 @@
       <option name="presentableId" value="Default" />
       <updated>1578079096384</updated>
       <workItem from="1578079097879" duration="1470000" />
-      <workItem from="1578081320484" duration="210000" />
+      <workItem from="1578081320484" duration="416000" />
+      <workItem from="1578319802332" duration="2568000" />
     </task>
     <servers />
   </component>
@@ -70,9 +79,9 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="749" y="264" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1578080162031" />
-    <state x="663" y="246" width="707" height="538" key="find.popup" timestamp="1578081566029">
+    <state x="663" y="246" width="707" height="538" key="find.popup" timestamp="1578322364825">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="663" y="246" width="707" height="538" key="find.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1578081566029" />
+    <state x="663" y="246" width="707" height="538" key="find.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1578322364825" />
   </component>
 </project>
