@@ -74,5 +74,8 @@ export default {
   },
   server: {
     port: 2000
+  },
+  router: {
+    base: '/prueba-cloudappi/'
   }
 }
