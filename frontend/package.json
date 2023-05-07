@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^4.0.0",
-    "@nuxtjs/pwa": "^2.6.0",
+    "@nuxtjs/pwa": "^3.3.5",
     "bootstrap-vue": "^2.1.0",
     "cross-env": "^5.2.0",
     "normalize-scss": "^7.0.1",
